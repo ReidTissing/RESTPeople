@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personnel Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+
+
+    <div class="container ">
+        <h1 class="banner">Current Humans</h1>
+        <h3>Single-page REST API with Flask, Connexion and Swagger UI.
+            <br>Enter a first and last name to create a new entry. Update allows you to change an existing first name.
+            <br>Click on any name to auto-populate the text fields.
+
+        </h3>
+        <div class="section editor d-flex flex-column">
+            <div class="d-flex justify-content-center"><label for="fname">First Name:
+                    <input id="fname" type="text" />
+                </label>
+            </div>
+            <br />
+            <div class="d-flex justify-content-center">
+                <label for="lname">Last Name:
+                    <input id="lname" type="text" />
+                </label>
+            </div>
+            <br />
+            <div class="d-flex justify-content-center">
+
+                <button id="create" class="btn btn-dark">Create</button>
+
+
+                <button id="update" class="btn btn-dark">Update</button>
+
+                <button id="delete" class="btn btn-dark">Delete</button>
+                <button id="reset" class="btn btn-dark">Clear</button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="people card">
+                <table class="table table-dark table-hover rounded-lg table-bordered">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Last Updated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="error">
+        </div>
+    </div>
+</body>
+<script src="static/js/home.js"></script>
+
+</html>
